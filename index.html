@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Quản lý tuyển sinh  -->
+    <div class="container py-5">
+      <h2>QUẢN LÝ TUYỂN SINH</h2>
+      <div class="row">
+        <div class="col-4">
+          <div class="form-group">
+            <label for="diemChuan"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemChuan"
+              aria-describedby="helpId"
+              placeholder="Điểm chuẩn "
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="kv"
+          >
+            <option selected value="0">Chọn khu vực</option>
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="dt"
+          >
+            <option selected value="0">Chọn đối tượng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="diemMon1"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemMon1"
+              aria-describedby="helpId"
+              placeholder="Điểm môn 1"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="diemMon2"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemMon2"
+              aria-describedby="helpId"
+              placeholder="Điểm môn 2"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="diemMon3"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemMon3"
+              aria-describedby="helpId"
+              placeholder="Điểm môn 3"
+            />
+          </div>
+        </div>
+      </div>
+      <button class="btn bg-dark text-white" id="btn1">Kết quả</button>
+      <div class="p-3 bg-dark text-white mt-4" id="kq1"></div>
+    </div>
+
+    <!-- Tính tiền điện  -->
+    <div class="container py-5">
+      <h2>TÍNH TIỀN ĐIỆN</h2>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="hoTen"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="hoTen"
+              aria-describedby="helpId"
+              placeholder="Nhập họ tên"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="soKw"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soKw"
+              aria-describedby="helpId"
+              placeholder="Nhập số kw"
+            />
+          </div>
+        </div>
+      </div>
+      <button class="btn bg-dark text-white" id="btn2">Tính tiền điện</button>
+      <div class="p-3 bg-dark text-white mt-4" id="kq2"></div>
+    </div>
+
+    <!-- Tính tiền thuế thu nhập cá nhân  -->
+    <div class="container py-5">
+      <h2>TÍNH THUẾ THU NHẬP CÁ NHÂN</h2>
+      <div class="row">
+        <div class="col-4">
+          <div class="form-group">
+            <label for="hoTen2"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="hoTen2"
+              aria-describedby="helpId"
+              placeholder="Nhập họ tên"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="thuNhap"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="thuNhap"
+              aria-describedby="helpId"
+              placeholder="Tổng thu nhập năm"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="soNguoi"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soNguoi"
+              aria-describedby="helpId"
+              placeholder="Số người phụ thuộc"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button class="btn bg-dark text-white" id="btn3">Tính tiền thuế</button>
+      <div class="p-3 bg-dark text-white mt-4" id="kq3"></div>
+    </div>
+
+    <!-- Bài tập tính tiền cáp  -->
+    <div class="container py-5">
+      <h2>TÍNH TIỀN CÁP</h2>
+      <div class="row">
+        <div class="col-4">
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="khachHang"
+          >
+            <option selected value="0">Chọn loại khách hàng</option>
+            <option value="1">Nhà dân</option>
+            <option value="2" id="doanhNghiep">Doanh nghiệp</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="maKhach"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="maKhach"
+              aria-describedby="helpId"
+              placeholder="Nhập mã khách hàng"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="soKenh"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soKenh"
+              aria-describedby="helpId"
+              placeholder="Số kênh cao cấp"
+            />
+          </div>
+        </div>
+        <div class="col-4 soKetNoi">
+          <div class="form-group">
+            <label for="soKetNoi"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soKetNoi"
+              aria-describedby="helpId"
+              placeholder="Số kết nối"
+            />
+          </div>
+        </div>
+      </div>
+      <button class="btn bg-dark text-white" id="btn4">Tính tiền cáp</button>
+      <div class="p-3 bg-dark text-white mt-4" id="kq4"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
