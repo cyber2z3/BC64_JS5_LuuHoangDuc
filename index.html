@@ -197,6 +197,7 @@
             class="form-select"
             aria-label="Default select example"
             id="khachHang"
+            onchange="displaySoKetNoi(value)"
           >
             <option selected value="0">Chọn loại khách hàng</option>
             <option value="1">Nhà dân</option>
@@ -265,6 +266,17 @@
       crossorigin="anonymous"
     ></script>
 
+    <script>
+      function displaySoKetNoi(loaiKhach) {
+        var loaiKhach = document.getElementById("khachHang").value;
+        console.log("loai khach la: " + loaiKhach);
+        if (loaiKhach == 2) {
+          document.getElementById("soKetNoi").style.display = "block";
+        } else {
+          document.getElementById("soKetNoi").style.display = "none";
+        }
+      }
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>

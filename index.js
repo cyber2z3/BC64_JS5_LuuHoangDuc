@@ -124,9 +124,10 @@ function checkThuNhap(tn){
     }
 }
 
-// document.getElementById('soKetNoi').style.visibility = "hidden"
+document.getElementById('soKetNoi').style.display = "none"
 
 // Bài tập tính tiền cáp 
+ 
 document.getElementById('btn4').onclick = function(){
     var loaiKhach = document.querySelector('#khachHang').value*1; 
     var maKhach = document.getElementById('maKhach').value;
